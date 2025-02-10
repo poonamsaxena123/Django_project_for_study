@@ -4,3 +4,11 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse("Hello django")
+
+
+def about(request):
+    return HttpResponse("this is next function about")
+
+def detail(request):
+    a="this is detail page"
+    return HttpResponse(f"the new page --->{a}")
